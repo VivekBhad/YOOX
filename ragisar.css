@@ -1,0 +1,54 @@
+#mybox{
+    text-align: center;
+    height: 100px;
+    background-color: #f3f3f3;
+    font-size: 12px;
+    margin-top: -15px;
+}
+#mybox>a{
+    text-align: center;
+
+}
+h3{
+    margin-top: -30px;
+}
+h1{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#cuntainor {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#cuntainor>div {
+
+    margin: auto;
+    width: 80%;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    border: 0ch;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: 0ch;
+    background-color: rgb(217, 214, 214);
+    border-radius: 7px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}

@@ -1,0 +1,28 @@
+#boy{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin: auto;
+    background-color: #f3f3f3;
+}
+h4{
+    font-size: 10px;
+    color: gray;
+    margin-bottom: -10px;
+}
+
+#dis{
+    text-align: center;
+    background-color:#f3f3f3;
+}
+#boy{
+    margin-top: 10px;
+}
+
+#boy>div>p{
+    font-size: 12px;
+
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+
+    <div id="form">
+        <form action="">
+        <h1>LOGIN</h1>
+      
+        
+        <div>
+        <input type="email" itemid="email" class="input" name="Email" placeholder="Enter email" id="">
+        </div>
+      
+        <div>
+        <input type="password" id="pass" class="input" name="password" placeholder="Enter password" id="">
+        </div>
+      
+        <BUtton>SIGN In</BUtton>
+
+        </form>
+    </div>
+<!-- <form action="">
+    <h3>email</h3>
+    <input type="email" name="email" id="email">
+    <h3>passwoed</h3>
+    <input type="pass" name="pass" id="pass">
+   <input type="submit" name="submit" id="submit">
+</form> -->
+
+</body>
+</html>
+<script>
+let form = document.querySelector("form");
+let user = JSON.parse(localStorage.getItem("user")) || [];
+form.addEventListener("submit",function(){
+   
+    let data ={
+        email :form.email.value,
+        pass: form.pass.value
+    }
+    if(chacksingin(data.email,data.pass)===true){
+        localStorage.setItem("singin",JSON.stringify(data));
+        alert("sing in Sucessful");
+    }
+    else{
+        alert("Wrong Username Or password");
+    }
+})   
+function chacksingin(){
+let filter = user.filter(function(elem){
+    return elem.email === email && 
+    elem.pass === pass;
+})
+if(filter.length>0){
+return true;
+}
+else {
+    return false;
+}
+}
+</script>
